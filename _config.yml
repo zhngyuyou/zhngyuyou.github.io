@@ -24,7 +24,11 @@ github:
 # Twitter username (optional)
 twitter:
   username: zhngyuyou
-
+  
+authors:
+ zhngyuyou:
+    name: 张与有
+    
 # Author ID (for authors.yml)
 author_id: zhngyuyou
 
