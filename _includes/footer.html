@@ -1,5 +1,3 @@
-<!-- The Footer -->
-
 <footer
   aria-label="Site Info"
   class="
@@ -11,9 +9,8 @@
     {{- '©' }}
     <time>{{ 'now' | date: '%Y' }}</time>
 
-   {% if site.author_id %}
-     {% assign author_info = site.data.authors[site.author_id] %}
-    <span >{{ author_info.name }}</span>.
+  {% if site.authors.zhngyuyou.name %}
+    <span >{{ site.authors.zhngyuyou.name }}</span>.
   {% else %}
    <em class="fst-normal">your_full_name</em>.
   {% endif %}
@@ -48,3 +45,5 @@
     {{ site.data.locales[include.lang].meta | replace: ':PLATFORM', _platform | replace: ':THEME', _theme }}
   </p>
 </footer>
+    ```
+- 这段代码会直接从 `site.authors`  中读取信息，而不是 `site.data.authors`.
