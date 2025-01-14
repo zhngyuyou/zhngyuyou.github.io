@@ -26,15 +26,15 @@ description: >- # used by seo meta and the atom feed
 url: "https://zhngyuyou.github.io"
 
 github:
-  username: zhangyuyou # change to your GitHub username
+  username: zhngyuyou # change to your GitHub username
 
 twitter:
-  username: zhangyuyou # change to your Twitter username
+  username: zhngyuyou # change to your Twitter username
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: 张与有
+  name: zhngyuyou
   email: example@domain.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
