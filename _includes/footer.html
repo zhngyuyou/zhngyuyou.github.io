@@ -11,11 +11,12 @@
     {{- '©' }}
     <time>{{ 'now' | date: '%Y' }}</time>
 
-    {% if site.social.links %}
-      <a href="{{ site.social.links[0] }}">{{ site.social.name }}</a>.
-    {% else %}
-      <em class="fst-normal">{{ site.social.name }}</em>.
-    {% endif %}
+   {% if site.author_id %}
+     {% assign author_info = site.data.authors[site.author_id] %}
+    <span >{{ author_info.name }}</span>.
+  {% else %}
+   <em class="fst-normal">your_full_name</em>.
+  {% endif %}
 
     {% if site.data.locales[include.lang].copyright.brief %}
       <span
